@@ -4,8 +4,8 @@ import GlobalStyles from "./components/GlobalStyles";
 function App() {
   return (
     <div className="App">
-      <GlobalStyles/>
-      <Home/>
+      <GlobalStyles />
+      <Home />
     </div>
   );
 }
