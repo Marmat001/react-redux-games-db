@@ -5,12 +5,22 @@ import { motion } from "framer-motion";
 import { useDispatch } from "react-redux";
 import { loadDetail } from "../actions/detailAction";
 //React Router
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import { smallImage } from "../util";
 
 const Game = ({ game: { name, released, background_image, id } }) => {
-  //Load details
+  //Scrolling
+  const history = useHistory();
+  if (history.location.pathname === "/") {
+    document.body.style.overflow = "auto";
+  } else {
+    document.body.style.overflow = "hidden";
+  }
+
+  //Load detail
   const dispatch = useDispatch();
   const loadDetailHandler = () => {
+    document.body.style.overflow = "hidden";
     dispatch(loadDetail(id));
   };
   return (
@@ -18,7 +28,11 @@ const Game = ({ game: { name, released, background_image, id } }) => {
       <Link to={`/game/${id}`}>
         <h3>{name}</h3>
         <p>Release Date: {released}</p>
-        <img src={background_image} alt={name} />
+        <img
+          src={smallImage(background_image, 640)}
+          alt={name}
+          loading="lazy"
+        />
       </Link>
     </StyledGame>
   );
@@ -30,6 +44,7 @@ const StyledGame = styled(motion.div)`
   text-align: center;
   border-radius: 1rem;
   cursor: pointer;
+  overflow: hidden;
   img {
     width: 100%;
     height: 40vh;
