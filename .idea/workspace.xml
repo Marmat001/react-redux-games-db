@@ -5,17 +5,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/detailAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/detailAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/gamesAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/gamesAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GameDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GameDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GlobalStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GlobalStyles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/detailReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/detailReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/gamesReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/gamesReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportWebVitals.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +81,7 @@
       <updated>1609193522602</updated>
       <workItem from="1609193523931" duration="4584000" />
       <workItem from="1609245039699" duration="14473000" />
-      <workItem from="1609266775398" duration="830000" />
+      <workItem from="1609266775398" duration="6513000" />
     </task>
     <servers />
   </component>
