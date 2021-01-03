@@ -7,6 +7,7 @@ import Game from "../components/Game";
 import styled from "styled-components";
 import { motion, AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import GameDetail from "../components/GameDetail";
+import { fadeIn } from "../animations";
 
 const Home = () => {
   const location = useLocation();
@@ -21,7 +22,7 @@ const Home = () => {
   );
   return (
     <AnimateSharedLayout type={"crossfade"}>
-      <GameList>
+      <GameList variants={fadeIn} initial="hidden" animate="show">
         <AnimatePresence>
           {pathId && <GameDetail pathId={pathId} />}
         </AnimatePresence>
@@ -66,12 +67,17 @@ const Home = () => {
 };
 
 const GameList = styled(motion.div)`
-  padding: 0rem 5rem;
+  padding: 0 5rem;
   h2 {
-    padding: 5rem 0rem;
+    padding: 5rem 0;
   }
-  @media (max-width: 670px) {
-    padding: 0rem;
+  @media (max-width: 470px) {
+    padding: 0;
+    h2 {
+      padding: 1.5rem;
+      justify-content: center;
+      text-align: center;
+    }
   }
 `;
 const Games = styled(motion.div)`

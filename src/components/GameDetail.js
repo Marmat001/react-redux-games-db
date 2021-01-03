@@ -18,7 +18,7 @@ import starFull from "../img/star-full.png";
 
 const GameDetail = ({ pathId }) => {
   //Data
-  const { screen, game, isLoading } = useSelector((state) => state.detail);
+  const { screen, isLoading, game } = useSelector((state) => state.detail);
   const history = useHistory();
   //Exit detail
   const exitDetailHandler = (e) => {
@@ -82,18 +82,20 @@ const GameDetail = ({ pathId }) => {
               </Info>
             </Stats>
             <Media>
-              <motion.img
-                layoutId={`image ${pathId}`}
-                src={smallImage(game.background_image, 1280)}
-                alt="game"
-                loading="lazy"
-              />
+              {game.background_image !== null && (
+                <motion.img
+                  layoutId={`image ${pathId}`}
+                  src={smallImage(game.background_image, 1280)}
+                  alt="game"
+                  loading="lazy"
+                />
+              )}
             </Media>
             <Description>
               <p>{game.description_raw}</p>
             </Description>
             <div className="gallery">
-              {screen.results &&
+              {screen.results !== null &&
                 screen.results.map((screen) => (
                   <img
                     src={smallImage(screen.image, 1280)}
@@ -142,6 +144,9 @@ const Detail = styled(motion.div)`
   img {
     width: 100%;
   }
+  @media (max-width: 670px) {
+    padding: 1rem 0.5rem;
+  }
 `;
 
 const Stats = styled(motion.div)`
@@ -153,12 +158,32 @@ const Stats = styled(motion.div)`
     height: 2rem;
     display: inline;
   }
+  @media (max-width: 670px) {
+    h3 {
+      display: inline;
+    }
+    img {
+      width: 1rem;
+      height: 1rem;
+    }
+    .rating {
+      max-width: 10rem;
+    }
+  }
 `;
 
 const Info = styled(motion.div)`
   text-align: center;
   h3 {
     padding: 1.5rem;
+  }
+  @media (max-width: 670px) {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    h3 {
+      padding: 0.5rem;
+    }
   }
 `;
 
@@ -167,6 +192,13 @@ const Platforms = styled(motion.div)`
   justify-content: space-evenly;
   img {
     margin-left: 3rem;
+    margin-right: 1rem;
+  }
+  @media (max-width: 670px) {
+    img {
+      margin-left: 0.5rem;
+      margin-right: 0;
+    }
   }
 `;
 
@@ -175,10 +207,16 @@ const Media = styled(motion.div)`
   img {
     width: 100%;
   }
+  @media (max-width: 670px) {
+    margin-top: 1rem;
+  }
 `;
 
 const Description = styled(motion.div)`
   margin: 5rem 0;
+  @media (max-width: 670px) {
+    margin: 1rem 0;
+  }
 `;
 
 export default GameDetail;

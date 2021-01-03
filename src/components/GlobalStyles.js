@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 *{
-  margin: 0;
+  margin: 0 ;
   padding: 0;
   box-sizing: border-box;
 }
@@ -18,14 +18,20 @@ html{
   }
 }
 body{
+  margin: auto;
   font-family: "Montserrat", sans-serif;
   width: 100%;
+  max-width: 1600px;
 }
 h2{
   font-size: 3rem;
   font-family: "Abril Fatface", cursive;
   font-weight: lighter;
   color: #FF7676;
+  @media(max-width: 400px) {
+    padding: 1rem;
+    font-size: 2rem;
+  }
 }
 h3{
   font-size: 1.3rem;

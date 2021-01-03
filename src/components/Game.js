@@ -7,6 +7,8 @@ import { loadDetail } from "../actions/detailAction";
 //React Router
 import { Link, useHistory } from "react-router-dom";
 import { smallImage } from "../util";
+import { popup } from "../animations";
+import imageNotFound from "../img/no_image.png";
 
 const Game = ({ game: { name, released, background_image, id } }) => {
   const stringPathId = id.toString();
@@ -25,16 +27,26 @@ const Game = ({ game: { name, released, background_image, id } }) => {
     dispatch(loadDetail(id));
   };
   return (
-    <StyledGame layoutId={stringPathId} onClick={loadDetailHandler}>
+    <StyledGame
+      layoutId={stringPathId}
+      onClick={loadDetailHandler}
+      variants={popup}
+      initial="hidden"
+      animate="show"
+    >
       <Link to={`/game/${id}`}>
         <motion.h3 layoutId={`title ${stringPathId}`}>{name}</motion.h3>
         <p>Release Date: {released}</p>
-        <motion.img
-          layoutId={`image ${stringPathId}`}
-          src={smallImage(background_image, 640)}
-          alt={name}
-          loading="lazy"
-        />
+        {background_image === null ? (
+          <motion.img src={imageNotFound} title="Image not available" />
+        ) : (
+          <motion.img
+            layoutId={`image ${stringPathId}`}
+            src={smallImage(background_image, 640)}
+            alt={name}
+            loading="lazy"
+          />
+        )}
       </Link>
     </StyledGame>
   );

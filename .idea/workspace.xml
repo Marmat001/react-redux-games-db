@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63422a87-3f1f-4df8-bb83-75e930bdc905" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.netlify/state.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/gamesAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/gamesAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/animations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/animations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GameDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GameDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GlobalStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GlobalStyles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/gamesReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/gamesReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +70,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/img" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -96,7 +101,7 @@
       <workItem from="1609245039699" duration="14473000" />
       <workItem from="1609266775398" duration="6974000" />
       <workItem from="1609592299785" duration="44000" />
-      <workItem from="1609592361749" duration="19743000" />
+      <workItem from="1609592361749" duration="28525000" />
     </task>
     <servers />
   </component>
