@@ -2,16 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63422a87-3f1f-4df8-bb83-75e930bdc905" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Nav.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Game.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GameDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GameDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GlobalStyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GlobalStyles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,6 +40,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="HbShouldOpenHtmlAsHb" value="disabled" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -87,7 +97,7 @@
       <workItem from="1609245039699" duration="14473000" />
       <workItem from="1609266775398" duration="6974000" />
       <workItem from="1609592299785" duration="44000" />
-      <workItem from="1609592361749" duration="5589000" />
+      <workItem from="1609592361749" duration="16911000" />
     </task>
     <servers />
   </component>

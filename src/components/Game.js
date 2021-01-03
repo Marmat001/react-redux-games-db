@@ -9,6 +9,7 @@ import { Link, useHistory } from "react-router-dom";
 import { smallImage } from "../util";
 
 const Game = ({ game: { name, released, background_image, id } }) => {
+  const stringPathId = id.toString();
   //Scrolling
   const history = useHistory();
   if (history.location.pathname === "/") {
@@ -24,11 +25,12 @@ const Game = ({ game: { name, released, background_image, id } }) => {
     dispatch(loadDetail(id));
   };
   return (
-    <StyledGame onClick={loadDetailHandler}>
+    <StyledGame layoutId={stringPathId} onClick={loadDetailHandler}>
       <Link to={`/game/${id}`}>
-        <h3>{name}</h3>
+        <motion.h3 layoutId={`title ${stringPathId}`}>{name}</motion.h3>
         <p>Release Date: {released}</p>
-        <img
+        <motion.img
+          layoutId={`image ${stringPathId}`}
           src={smallImage(background_image, 640)}
           alt={name}
           loading="lazy"
